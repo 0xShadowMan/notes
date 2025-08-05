@@ -1,0 +1,84 @@
+# Site settings
+title: "MR.ShadowMan"
+tagline: "Hunting bugs, solving challenges, sharing knowledge"
+description: >
+  A personal collection of bug bounty hunting insights and TryHackMe room writeups.
+
+lang: en
+timezone: Asia/Kolkata
+
+url: "https://0xshadowman.github.io"
+baseurl: "/notes"
+
+theme: jekyll-theme-chirpy
+
+github:
+  username: 0xShadowMan
+
+twitter:
+  username: 0xMRShadowMan
+
+social:
+  name: MR.ShadowMan
+  email: shohanur8ever@gmail.com
+  links:
+    - https://twitter.com/0xMRShadowMan
+    - https://github.com/0xShadowMan
+
+avatar: /assets/img/profile.jpg
+favicon: /assets/img/favicons/favicon.ico
+social_preview_image: /assets/img/favicons/apple-touch-icon.png
+
+# Optional: analytics
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+# Comments (optional)
+comments:
+  provider:
+
+# TOC
+toc: true
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+
+# Custom assets hosting (optional)
+assets:
+  self_host:
+    enabled: true
+    env:
+
+paginate: 10
+
+# The base URL of your site
+baseurl: ""
+
+# Markdown and highlighter
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+# Include/Exclude
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - LICENSE
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
