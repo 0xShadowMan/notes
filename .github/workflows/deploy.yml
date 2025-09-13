@@ -2,8 +2,8 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: [ main ]  # Trigger when you push to main
-  workflow_dispatch:     # Also allows manual run from Actions tab
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,27 +14,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2
         with:
           version: 9
 
-      - name: Install dependencies
-        run: pnpm install
+      - run: pnpm install
+      - run: pnpm build
 
-      - name: Build Astro site
-        run: pnpm build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
+      # ✅ Upgrade upload-artifact to v4
+      - uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: ./dist
@@ -46,14 +40,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: github-pages
           path: ./dist
 
-      - name: Deploy to GitHub Pages
-        id: deploy
+      - id: deploy
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages
