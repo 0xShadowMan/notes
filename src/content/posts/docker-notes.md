@@ -271,7 +271,7 @@ docker run -d --name webserver -p 80:80  webserver
 
 Open in browser: [http://localhost](http://localhost/)
 
-![image.png](/assets/docker-notes/image.png)
+![image.png](\public\assets\docker-notes\image.png)
 
 ---
 
@@ -309,13 +309,13 @@ RUN apt-get update -y && \\
     apt-get install -y apache2 net-tools
 ```
 
-![image.png](/assets/docker-notes/image%201.png)
+![image.png](\public\assets/docker-notes/image%201.png)
 
 ---
 
 ## Docker Compose
 
-![image.png](/assets/docker-notes/image%202.png)
+![image.png](\public\assets/docker-notes/image%202.png)
 
 ### Common Commands
 
