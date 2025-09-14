@@ -185,10 +185,10 @@ jobs:
 
 ---
 
-### 6️⃣ Test Locally  
+### 6️⃣ Build and Test Locally  
 
 ```bash
-pnpm dev
+pnpm build && pnpm preview
 ```
 
 ---
