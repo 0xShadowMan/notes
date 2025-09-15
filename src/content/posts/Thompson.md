@@ -49,7 +49,7 @@ When you cancel the authentication required pop-up, you will get the credentials
 
 **username**: `tomcat`
 
-**passsword**: `s3cret`
+**passsword**: `******`
 
 ![image.png](assets/thompson/image%202.png)
 
@@ -117,12 +117,9 @@ nc -lvnp 53
 
 ![image.png](assets/thompson/image%2011.png)
 
-root.txt flag: **`d89d5391984c0450a95497153ae7ca3a`**
-
 # Summary
 
 - Logged into Tomcat with default credentials.
 - Uploaded a reverse shell via the WAR backdoor exploit.
 - Gained shell access as the Tomcat user.
 - Escalated privileges to root by modifying a cron-executed script.
-- Captured the root flag: d89d5391984c0450a95497153ae7ca3a
