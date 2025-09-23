@@ -73,10 +73,10 @@ shohan@kali:~$
 
 Example:
 
-- pull (we have done this above!)
-- ls (list images)
-- rm (remove an image)
-- build (we will come onto this in the “Building your First Container” task)
+- `pull` (we have done this above!)
+- `ls` (list images)
+- `rm` (remove an image)
+- `build` (we will come onto this in the “Building your First Container” task)
 
 ## **Docker Image ls**
 
@@ -225,7 +225,7 @@ shohan@kali:~$
 Check built images:
 
 ```
-docker image ls
+shohan@kali:~$ docker image ls
 REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 helloworld   latest    4b11fc80fdd5   2 minutes ago   77.8MB
 ubuntu       22.04     2dc39ba059dc   10 days ago     77.8MB
