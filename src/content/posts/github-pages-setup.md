@@ -91,7 +91,7 @@ pnpm install
 pnpm dev
 ```
 
-👉 Open in browser:  [http://localhost:4321`](http://localhost:4321)  
+👉 Open in browser:  [http://localhost:4321](http://localhost:4321)  
 
 ---
 
