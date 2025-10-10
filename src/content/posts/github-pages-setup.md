@@ -91,7 +91,7 @@ pnpm install
 pnpm dev
 ```
 
-👉 Open in browser:  [http://localhost:4321](http://localhost:4321)  
+👉 Open in browser:  [http://localhost:4321`](http://localhost:4321)  
 
 ---
 
@@ -196,6 +196,7 @@ pnpm build && pnpm preview
 ### 7️⃣ Push to GitHub  
 
 ```bash
+git init
 git add .
 git commit -m "Setup Fuwari Blog with GitHub Pages"
 git checkout -b main

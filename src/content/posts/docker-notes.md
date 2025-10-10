@@ -8,7 +8,25 @@ category: "DevOps"
 draft: false
 lang: "en"
 ---
-# Docker
+
+# 🐳 What is Docker?
+
+**Docker** is a platform used to **build, ship, and run applications inside containers**.
+
+---
+
+## 🔹 What is a Container?
+
+A **container** is a lightweight, portable package that includes everything needed for an application to run — **code, libraries, dependencies, and environment settings** — so it runs the same on any system.
+
+---
+
+## ⚙️ Why Use Docker?
+
+- Works the same on all systems (solves “it works on my machine” issue)
+- Fast, lightweight, and uses fewer resources than Virtual Machines
+- Easy to deploy and scale across environments
+- Great for DevOps, AppSec, and automation tasks
 
 ### Docker Syntax Categories
 
