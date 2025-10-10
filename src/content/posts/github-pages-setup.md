@@ -220,3 +220,12 @@ git push origin main
 Your blog is live at:  
 
 👉 <https://username.github.io/blogs>
+
+## Summary
+
+- Installed Node.js, NPM, and PNPM to set up the environment for Fuwari Astro blog
+- Created and cloned a GitHub repository for deployment
+- Installed Fuwari, configured site settings, and customized content (config.ts, about.md, favicons)
+- Built and ran the blog locally using `pnpm dev` and `pnpm build`
+- Configured GitHub Actions workflow to automate deployment to GitHub Pages
+- Pushed changes to GitHub and enabled GitHub Pages to publish the blog online

@@ -373,4 +373,10 @@ networks:
 
 ---
 
-# END
+# Summary
+
+- Built and managed Docker images using Dockerfiles and docker build
+- Pulled, listed, and removed images efficiently (docker pull, docker image ls, docker image rm)
+- Deployed and managed containers with key options for interactivity, detached mode, port mapping, and volume mounting (docker run -it/-d -p -v)
+- Utilized Docker Compose for orchestrating multi-container applications
+- Optimized Dockerfiles to minimize image size, reduce layers, and improve build efficiency
