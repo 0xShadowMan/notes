@@ -18,7 +18,7 @@ A quick, step-by-step guide to set up and deploy your **Fuwari Astro blog** on *
 
 To understand GitHub Pages, let's imagine hosting a website on your local machine. You set up an Apache server and your site runs perfectly. But when you upload the same website to GitHub Pages, it doesn’t run automatically. Why? 🤔
 
-On your local machine, the Apache server handles the website. GitHub Pages also provides a server automatically, but for more complex websites, you need a configuration file to tell GitHub how to deploy your site. This is done using a GitHub Actions workflow file like deploy.yml.
+On your local machine, the Apache server handles the website. GitHub Pages also provides a server automatically, but for more complex websites, you need a configuration file to tell GitHub how to deploy your site. This is done using a GitHub Actions workflow file like `deploy.yml`.
 
 ### ⚙️ Example `deploy.yml`
 
