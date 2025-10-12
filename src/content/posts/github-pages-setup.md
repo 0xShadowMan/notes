@@ -14,6 +14,42 @@ A quick, step-by-step guide to set up and deploy your **Fuwari Astro blog** on *
 
 ---
 
+# 🚀 How GitHub Pages Works
+
+To understand GitHub Pages, let's imagine hosting a website on your local machine. You set up an Apache server and your site runs perfectly. But when you upload the same website to GitHub Pages, it doesn’t run automatically. Why? 🤔
+
+On your local machine, the Apache server handles the website. GitHub Pages also provides a server automatically, but for more complex websites, you need a configuration file to tell GitHub how to deploy your site. This is done using a GitHub Actions workflow file like deploy.yml.
+
+### ⚙️ Example `deploy.yml`
+
+```yml
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: peaceiris/actions-gh-pages@v7
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+```
+
+## 💡 Simplified Explanation
+
+Think of GitHub as a separate machine for every repository. To host and run your website on that machine, you need a deploy file (deploy.yml) to configure it properly.
+
+- The workflow automatically builds and publishes your site whenever you push updates to the main branch.
+
+- This ensures your website runs correctly on GitHub Pages without manual server setup.
+
+---
+
 ## ✅ Requirements
 
 Before starting, ensure the following are installed on your system:
@@ -182,6 +218,12 @@ jobs:
         with:
           artifact_name: github-pages
 ```
+
+## 📝 Note
+
+The workflow file `deploy.yml` is the key configuration that sets up and builds the environment for your GitHub Pages site.
+
+- You can think of it like a Dockerfile: it automates the environment setup, ensuring your site runs smoothly without manual intervention.
 
 ---
 
