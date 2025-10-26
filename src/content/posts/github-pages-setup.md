@@ -8,6 +8,7 @@ category: "Projects"
 draft: false
 lang: "en"
 ---
+
 # 📘 ShadowNotes – Deploy Fuwari Blog to GitHub Pages
 
 A quick, step-by-step guide to set up and deploy your **Fuwari Astro blog** on **GitHub Pages**.  
