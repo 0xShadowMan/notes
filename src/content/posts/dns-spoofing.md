@@ -103,35 +103,35 @@ example.com          TXT  "v=spf1 ip4:192.0.2.0/24 -all" 3600
 
 2. Select your network interface (e.g., `eth0` or `wlan0`).
 
-![image.png](\assets\dns-spoofing\image.png)
+![image.png](assets/dns-spoofing/image.png)
 
 1. Start host scan → list connected hosts on the network.
 
-    ![image.png](\assets\dns-spoofing\image%201.png)
+    ![image.png](assets/dns-spoofing/image%201.png)
 
 2. Set `Target 1` as the victim IP and `Target 2` as the gateway/router IP.
 
-![image.png](\assets\dns-spoofing\image%202.png)
+![image.png](assets/dns-spoofing/image%202.png)
 
 1. Start MITM (ARP poisoning) attack to intercept traffic.
 
-![image.png](\assets\dns-spoofing\image%203.png)
+![image.png](assets/dns-spoofing/image%203.png)
 
-![image.png](\assets\dns-spoofing\image%204.png)
+![image.png](assets/dns-spoofing/image%204.png)
 
 1. Enable the `dns_spoof` plugin from the *Plugins* menu.
 
-![image.png](\assets\dns-spoofing\image%205.png)
+![image.png](assets/dns-spoofing/image%205.png)
 
-![image.png](\assets\dns-spoofing\image%206.png)
+![image.png](assets/dns-spoofing/image%206.png)
 
 1. Start the spoofing
 
-![image.png](\assets\dns-spoofing\image%207.png)
+![image.png](assets/dns-spoofing/image%207.png)
 
 When the victim opens `tiktok.com` or `facebook.com`, the DNS query is poisoned and the browser is redirected to my host at **192.168.0.110** (my local machine), while the address bar continues to display the original domain name.
 
-![image.png](\assets\dns-spoofing\image%208.png)
+![image.png](assets/dns-spoofing/image%208.png)
 
 ## 4. Cleanup & Remediation
 
@@ -140,7 +140,7 @@ After testing, restore victim systems and network equipment:
 - Stop Ettercap and all attacks.
 - The site is now served over **HTTP** (TLS/SSL is missing), not HTTPS.
 
-    ![image.png](\assets\dns-spoofing\image%209.png)
+    ![image.png](assets/dns-spoofing/image%209.png)
 
 - Flush DNS caches on affected hosts:
   - **Windows:**
@@ -149,7 +149,7 @@ After testing, restore victim systems and network equipment:
     ipconfig /flushdns
     ```
 
-    ![image.png](\assets\dns-spoofing\image%2010.png)
+    ![image.png](assets/dns-spoofing/image%2010.png)
 
   - Linux (systemd-resolved):
 
@@ -159,9 +159,9 @@ After testing, restore victim systems and network equipment:
 
   - macOS:
 
-        ```bash
-        sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
-        ```
+    ```bash
+    sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+    ```
 
 - Restart network interfaces or reboot devices if necessary.
 - Revert any firewall/iptables rules you temporarily applied.
