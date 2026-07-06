@@ -105,27 +105,27 @@ example.com          TXT  "v=spf1 ip4:192.0.2.0/24 -all" 3600
 
 ![image.png](assets/dns-spoofing/image.png)
 
-1. Start host scan → list connected hosts on the network.
+3. Start host scan → list connected hosts on the network.
 
     ![image.png](assets/dns-spoofing/image%201.png)
 
-2. Set `Target 1` as the victim IP and `Target 2` as the gateway/router IP.
+4. Set `Target 1` as the victim IP and `Target 2` as the gateway/router IP.
 
 ![image.png](assets/dns-spoofing/image%202.png)
 
-1. Start MITM (ARP poisoning) attack to intercept traffic.
+5. Start MITM (ARP poisoning) attack to intercept traffic.
 
 ![image.png](assets/dns-spoofing/image%203.png)
 
 ![image.png](assets/dns-spoofing/image%204.png)
 
-1. Enable the `dns_spoof` plugin from the *Plugins* menu.
+6. Enable the `dns_spoof` plugin from the *Plugins* menu.
 
 ![image.png](assets/dns-spoofing/image%205.png)
 
 ![image.png](assets/dns-spoofing/image%206.png)
 
-1. Start the spoofing
+7. Start the spoofing
 
 ![image.png](assets/dns-spoofing/image%207.png)
 
