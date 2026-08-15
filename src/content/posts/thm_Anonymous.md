@@ -10,7 +10,7 @@ lang: "en"
 ---
 # Recon
 
-I started by scanning the target with Nmap to identify open ports, running services, and their versions.
+I started by scanning the target with nmap to identify open ports, running services, and their versions.
 
 ```
 ❯ nmap -sV -sC 10.48.171.86
