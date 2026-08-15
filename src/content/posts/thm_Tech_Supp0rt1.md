@@ -3,7 +3,7 @@ title: "TryHackMe - Tech_Supp0rt: 1"
 published: 2026-08-15
 description: "TryHackMe Tech_Supp0rt1 writeup — SMB share leaks, Subrion CMS RCE exploit, WordPress config credential recovery, and privilege escalation via a NOPASSWD iconv sudo rule (GTFOBins)."
 image: "/assets/tech-supp0rt1/cover.png"
-tags: [TryHackMe, Linux, SMB, Subrion CMS, WordPress, Reverse Shell, GTFOBins, Privilege Escalation]
+tags: [TryHackMe, Linux, SMB, Subrion CMS, WordPress, Privilege Escalation]
 category: "TryHackMe"
 draft: false
 lang: "en"

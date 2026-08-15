@@ -3,7 +3,7 @@ title: "TryHackMe - Kiba"
 published: 2026-08-15
 description: "TryHackMe Kiba writeup — exploiting Kibana 6.5.4 via CVE-2019-7609 RCE for a reverse shell, then privilege escalation to root using Linux capabilities (cap_setuid) on a custom Python3 binary."
 image: "/assets/kiba/cover.png"
-tags: [TryHackMe, Linux, Kibana, CVE-2019-7609, Linux Capabilities, Privilege Escalation]
+tags: [TryHackMe, Linux, Kibana, CVE-2019-7609, Privilege Escalation]
 category: "TryHackMe"
 draft: false
 lang: "en"

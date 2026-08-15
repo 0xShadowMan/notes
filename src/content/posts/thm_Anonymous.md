@@ -3,7 +3,7 @@ title: "TryHackMe - Anonymous"
 published: 2026-08-16
 description: "TryHackMe Anonymous writeup — anonymous FTP access, cron job hijacking for a reverse shell foothold, and privilege escalation to root via the PwnKit (CVE-2021-4034) pkexec exploit."
 image: "assets/anonymous/cover.png"
-tags: [TryHackMe, Linux, FTP, Cron Job, PwnKit, CVE-2021-4034, Privilege Escalation]
+tags: [TryHackMe, Linux, FTP, Cron Job, PwnKit, Privilege Escalation]
 category: "TryHackMe"
 draft: false
 lang: "en"

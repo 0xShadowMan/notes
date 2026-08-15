@@ -3,7 +3,7 @@ title: "TryHackMe - Internal"
 published: 2026-08-15
 description: "TryHackMe Internal writeup — WordPress XML-RPC brute force, Theme Editor RCE, SSH pivoting, and Jenkins Script Console exploitation to root."
 image: "/assets/thm-internal/cover.jpg"
-tags: [TryHackMe, Linux, WordPress, XML-RPC, Jenkins, Pivoting, Privilege Escalation]
+tags: [TryHackMe, Linux, WordPress, XML-RPC, Jenkins, Privilege Escalation]
 category: "TryHackMe"
 draft: false
 lang: "en"
