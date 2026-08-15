@@ -1,5 +1,5 @@
 ---
-title: "TryHackMe - hackerNote"
+title: "TryHackMe - HackerNote"
 published: 2026-08-15
 description: "TryHackMe HackerNote writeup — timing-attack user enumeration, Hydra password brute-forcing, and privilege escalation via CVE-2019-18634 (sudo pwfeedback buffer overflow)."
 image: "/assets/hackernote/cover.png"
