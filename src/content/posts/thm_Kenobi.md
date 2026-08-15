@@ -263,8 +263,3 @@ cat root.txt
 9. Exploited a PATH hijacking vulnerability.
 10. Obtained root privileges and retrieved the root flag.
 
-**Machine:** Kenobi
-
-**Difficulty:** Easy
-
-**Techniques:** SMB Enumeration, NFS Enumeration, FTP Misconfiguration, SSH Key Theft, SUID Abuse, PATH Hijacking, Privilege Escalation
