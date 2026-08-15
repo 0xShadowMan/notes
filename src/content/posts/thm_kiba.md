@@ -8,7 +8,6 @@ category: "TryHackMe"
 draft: false
 lang: "en"
 ---
-# kiba
 
 # Recon
 
