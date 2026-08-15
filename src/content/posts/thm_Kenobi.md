@@ -8,22 +8,7 @@ category: "TryHackMe"
 draft: false
 lang: "en"
 ---
-
-**Machine:** Kenobi
-
-**Difficulty:** Easy
-
-**Techniques:** SMB Enumeration, NFS Enumeration, FTP Misconfiguration, SSH Key Theft, SUID Abuse, PATH Hijacking, Privilege Escalation
-
-# Kenobi Room - Walkthrough Notes
-
-## Target Information
-
-**IP Address:** `10.10.177.254`
-
----
-
-## 1. Initial Enumeration
+## 1. Initial Enumeratio
 
 ### Nmap Service and Script Scan
 
